@@ -18,15 +18,8 @@ description: Sorcery is a practice of casting spells, communicate with and embod
 baseurl: "/sorceress"
 url: "https://chethanbhat.github.io/sorceress/"
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - Rakefile
   - README.md
   - LICENSE.txt
-  - CHANGELOG.md
-  - jekyll-whiteglass.gemspec
-  - screenshot.png
-  - vendor
 
 # Social media
 twitter_username:
@@ -37,7 +30,6 @@ google_analytics:
 
 # Plugins
 gems:
-  - jekyll-archives
   - jekyll-paginate
   - jekyll-sitemap
 
