@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Sorceress & Sorcery"
+title: "Sorceress and Sorcery"
 permalink: /sorceress-and-sorcery/
 description: Sorcery, or black magic, is more than just merely wishing extremely hard for something to come true. It’s even more than finding a spell on the Internet and trying to cast it yourself. True sorcery can only be performed by a sorcerer or sorceress. Sorcery is a complicated practice and sorceresses have tools that required and they also possess a certain closeness with things that are considered to be dark. For a sorceress to perform sorcery, she first needs to take into account three main principles.
 order: 3
