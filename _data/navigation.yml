@@ -1,0 +1,15 @@
+# If you want to link only specific pages in your header, add the path to the
+# pages in order as they should show up.
+main:
+  - title: "Home"
+    url: /
+  - title: "What is a Sorceress?"
+    url: /what-is-a-sorceress/
+  - title: "Tools of the Sorceress"
+    url: /tools-of-the-sorceress/
+  - title: "Sorceress and Sorcery"
+    url: /sorceress-and-sorcery/
+  - title: "How Dangerous is Sorcery?"
+    url: /how-dangerous-is-sorcery/
+  - title: "Sorceress in Popular Culture"
+    url: /sorceress-in-popular-culture/

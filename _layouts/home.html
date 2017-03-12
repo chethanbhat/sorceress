@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
+
+  <ul class="post-list">
+
+    {% assign sorted_pages = site.pages | sort:"order" %}
+    {% for page in sorted_pages %}
+      {% if page.layout == "page" %}
+
+      <li{% if lang != empty %} lang="{{ lang }}"{% endif %}>
+        <header class="post-header">
+          <h1 class="post-title">
+            <a class="post-link" href="{% if site.baseurl == "/" %}{{ page.url }}{% else %}{{ page.url | prepend: site.baseurl }}{% endif %}">{%if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</a>
+          </h1>
+        </header>
+
+        <div class="post-content">
+          {{ page.description | strip_html | truncatewords:50}}
+        </div>
+          <p class="post-continue">
+            <a class="read-more" href="{% if site.baseurl == "/" %}{{ page.url }}{% else %}{{ page.url | prepend: site.baseurl }}{% endif %}">[Read More]</a>
+          </p>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  {% include pagination.html %}
+
+</div>
